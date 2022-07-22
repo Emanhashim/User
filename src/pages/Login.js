@@ -177,8 +177,9 @@ swal("Failed", "Wrong Password or Email Address", "error")
           Login
         </button>
         </form>
-
-       
+        <span className="form-input-login">
+          Dont't Hava an account? Register <a href="sign-up">here</a>
+        </span>       
       </div>
      
      

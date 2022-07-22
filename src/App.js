@@ -82,8 +82,9 @@ function App() {
       <Route path='/login' component={Login} />
       <Route path='/loginm' component={LoginM} />
       <Route path='/logina' component={LoginA} />
-     
-   
+      <Route path='/signupa' component={SignupA} />
+      <Route path='/signupm' component={SignupM} />
+      <Route path='/sign-up' component={SignUp} />
     </Router> 
     
  }
