@@ -69,7 +69,7 @@ async function login(){
       body:JSON.stringify(item)
       
   }
-  const url ="http://198.199.67.201:8080/api/signin/agent"
+  const url ="http://198.199.67.201:8080/Api/SignIn/Agent"
   try{
    const response= await fetch(url,options);
     const result =await response.json();
@@ -84,7 +84,7 @@ async function login(){
  
 if(response.ok){
   console.log("Login successful")
-  swal("Successful", "Welcom", "success", {
+  swal("Successful", "Welcome", "success", {
     buttons: false,
     timer: 2000,
   }).then((value) => {

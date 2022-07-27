@@ -77,7 +77,7 @@ height: 100%;
     height: 50%;
   }
 }
-@media screen and (min-width: 280px) and (max-width: 1080px) {
+@media screen and (min-width: 580px) and (max-width: 780px) {
   margin-left: 0;
   .grid {
     .row__one,

@@ -27,7 +27,7 @@ const changePage = ({ selected }) => {
 };
 console.log(summaryw)
 
-    fetch("http://198.199.67.201:8080/api/accounts/transaction", {
+    fetch("http://198.199.67.201:8080/Api/Accounts/Transaction", {
   method: "GET",
    headers: {
     'Content-Type':'application/json',
@@ -315,7 +315,7 @@ gap: 1rem;
     }
   }
 }
-@media screen and (min-width: 280px) and (max-width: 375px) {
+@media screen and (min-width: 580px) and (max-width: 575px) {
   .transactions {
     .transaction {
       flex-direction: column;

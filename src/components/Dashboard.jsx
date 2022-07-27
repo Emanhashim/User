@@ -68,7 +68,7 @@ height: 100%;
     height: 50%;
   }
 }
-@media screen and (min-width: 980px) and (max-width: 1980px) {
+@media screen and (min-width: 980px) and (max-width: 980px) {
   margin-left: 0;
   display: block;
     position: absolute;

@@ -15,7 +15,7 @@ export default function Commission() {
   const commission=JSON.parse(localStorage.getItem('commission'));
   console.log(jwt)
   console.log(commission)
-  fetch("http://198.199.67.201:8080/api/accounts/commission", {
+  fetch("http://198.199.67.201:8080/Api/Accounts/Commission", {
     method: "GET",
      headers: {
       'Content-Type':'application/json',
@@ -109,7 +109,7 @@ display: grid;
     }
 }
 
-@media screen and (min-width: 280px) and (max-width: 720px) {
+@media screen and (min-width: 580px) and (max-width: 520px) {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   .analytic {
     &:nth-of-type(3),

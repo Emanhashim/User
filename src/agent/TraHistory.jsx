@@ -27,7 +27,7 @@ const changePage = ({ selected }) => {
 };
 console.log(summaryw)
 
-    fetch("http://198.199.67.201:8080/api/accounts/transaction", {
+    fetch("http://198.199.67.201:8080/Api/Accounts/Transaction", {
   method: "GET",
    headers: {
     'Content-Type':'application/json',

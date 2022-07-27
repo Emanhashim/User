@@ -18,6 +18,7 @@ export default function Sidebar() {
     localStorage.removeItem("jwt");
     localStorage.removeItem("user");
     localStorage.removeItem("summary");
+    localStorage.removeItem("balance");
     localStorage.removeItem("amount");
     window.location.href = "/login";}
   const [currentLink, setCurrentLink] = useState(1);
@@ -300,7 +301,7 @@ const Section = styled.section`
   
     }
   }
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
+  @media screen and (min-width: 580px) and (max-width: 980px) {
     position: initial;
     width: 100%;
     height: max-content;

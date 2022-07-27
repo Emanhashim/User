@@ -176,7 +176,7 @@ export default function Earnings() {
   const balance=JSON.parse(localStorage.getItem('balance'));
   console.log(jwt)
 
-  fetch("http://198.199.67.201:8080/api/accounts/balance", {
+  fetch("http://198.199.67.201:8080/Api/Accounts/Balance", {
     method: "GET",
      headers: {
       'Content-Type':'application/json',
@@ -200,7 +200,7 @@ export default function Earnings() {
   })
   .catch(err => { console.log(err); 
   });
-  fetch("http://198.199.67.201:8080/api/accounts/transaction", {
+  fetch("http://198.199.67.201:8080/Api/Accounts/Transaction", {
     method: "GET",
      headers: {
       'Content-Type':'application/json',

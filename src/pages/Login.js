@@ -71,7 +71,7 @@ async function login(){
       body:JSON.stringify(item)
       
   }
-  const url ="http://198.199.67.201:8080/api/signin/user"
+  const url ="http://198.199.67.201:8080/Api/SignIn/User"
   try{
    const response= await fetch(url,options);
     const result =await response.json();
@@ -86,7 +86,7 @@ async function login(){
  
 if(response.ok){
   console.log("Login successful")
-  swal("Successful", "Welcom", "success", {
+  swal("Successful", "Welcome", "success", {
     buttons: false,
     timer: 2000,
   }).then((value) => {
@@ -137,7 +137,7 @@ swal("Failed", "Wrong Password or Email Address", "error")
           <label className="form-label">Phone Number</label>
           <input
             className="form-input"
-            type="username"
+            type="number"
             name="username"
             placeholder="Enter Your Phone Number"
             {...register("user", { required: true, maxLength: 30 })}
@@ -178,8 +178,9 @@ swal("Failed", "Wrong Password or Email Address", "error")
         </button>
         </form>
         <span className="form-input-login">
-          Dont't Hava an account? Register <a href="sign-up">here</a>
-        </span>       
+          Dont't Hava an account? Register <a href="/sign-up">here</a>
+        </span>
+       
       </div>
      
      

@@ -63,7 +63,8 @@ const Signup = () => {
   const [phone, setPhone] = useState();
   const [app_user, setApp_user] = useState([]);
   const [username , setUsername] = useState("");
-
+console.log(gender);
+console.log(firstName)
   const handleClick = (e) => {
    
     signupxx()
@@ -114,7 +115,7 @@ const Signup = () => {
         body:JSON.stringify(item)
         
     }
-    const url =("http://198.199.67.201:8080/api/signup/user")
+    const url =("http://localhost:8080/Api/SignUp/User")
     try{
      const response= await fetch(url,options);
       const result =await response.json();
@@ -328,9 +329,10 @@ console.log(mess)
           <div className="form-inputs">
             <FontAwesomeIcon icon="user" className="fa" />
             <label className="form-labelx">Gender</label>
-            <select  className="form-input"  > Gender 
-          <option  className="form-input" value={gender} onChange={(e) => setGender(e.target.value)}>MALE</option>
-          <option  className="form-input" value={gender} onChange={(e) => setGender(e.target.value)}>FEMALE</option>
+            <select  className="form-input" onChange={(e) => setGender(e.target.value)} > Gender 
+            <option  className="form-input" value={"MALE"} ></option>
+          <option  className="form-input" value={"MALE"} >MALE</option>
+          <option  className="form-input" value={"FEMALE"} >FEMALE</option>
           
   
          

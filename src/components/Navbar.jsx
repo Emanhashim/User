@@ -7,7 +7,7 @@ export default function Navbar() {
     <Nav>
       <div className="title">
       <h4>{user.username}</h4>
-      <h1>welcom to<span>Baz payment DASHBOARD</span></h1>
+      <h1>welcome to<span>Baz payment DASHBOARD</span></h1>
       </div>
       <div className="search">
         <BiSearch/>
@@ -52,7 +52,7 @@ display: flex;
       }
   }
 }
-@media screen and (min-width: 280px) and (max-width: 1080px) {
+@media screen and (min-width: 580px) and (max-width: 520px) {
   flex-direction: column;
   .title {
     h1 {
@@ -61,6 +61,14 @@ display: flex;
         margin: 1rem 0;
         /* letter-spacing: 0; */
       }
+    }
+
+  }
+  .search{
+    span {
+      display: block;
+      margin: 1rem 0;
+      /* letter-spacing: 0; */
     }
   }
 }

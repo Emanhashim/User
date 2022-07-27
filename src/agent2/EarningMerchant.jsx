@@ -187,7 +187,7 @@ export default function EarningMerchant() {
 
 
 
-  fetch("http://198.199.67.201:8080/api/accounts/balance", {
+  fetch("http://198.199.67.201:8080/Api/Accounts/Balance", {
     method: "GET",
      headers: {
       'Content-Type':'application/json',
