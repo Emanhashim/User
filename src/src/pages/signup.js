@@ -125,7 +125,7 @@ console.log(firstName)
 console.log(mess)
       if(response.ok){
         console.log("Signup successful")
-        swal("Successful", "Welcome", "success", {
+        swal("Successful", "Welcom", "success", {
           buttons: false,
           timer: 2000,
         })
