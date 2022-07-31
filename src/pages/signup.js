@@ -115,7 +115,7 @@ console.log(firstName)
         body:JSON.stringify(item)
         
     }
-    const url =("http://localhost:8080/Api/SignUp/User")
+    const url =("http://198.199.67.201:8080/Api/SignUp/User")
     try{
      const response= await fetch(url,options);
       const result =await response.json();
@@ -125,7 +125,7 @@ console.log(firstName)
 console.log(mess)
       if(response.ok){
         console.log("Signup successful")
-        swal("Successful", "Welcom", "success", {
+        swal("Successful", "Welcome", "success", {
           buttons: false,
           timer: 2000,
         })
