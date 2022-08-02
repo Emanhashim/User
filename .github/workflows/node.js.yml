@@ -27,6 +27,6 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm install react-scripts --save
-    - run: npm run build 
+    - run: npm start
     - run: npm install react-scripts --save
     - run: npm start
