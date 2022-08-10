@@ -28,5 +28,3 @@ jobs:
     - run: npm install
     - run: npm install react-scripts --save
     - run: npm start
-    - run: npm install react-scripts --save
-    - run: npm start
